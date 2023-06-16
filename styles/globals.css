@@ -2,26 +2,155 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.headerSticky{
+  position: fixed;
+  top: 0;
+  background-color: #05093980;
+  backdrop-filter: blur(4px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media only screen and  (min-width: 1024px) {
+  .video{
+    max-width: 60.3125rem;
+    z-index: 1;
+    position: relative;
+  }
+
+  .video:before{
+    box-shadow: 0px 0px 5px #00b1ff;
+    border: 1px solid #00b1ff;
+    box-shadow: 0px 0px 20px #00b1ff;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    z-index: -2;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+/*FORM FORNECEDOR*/
+.container-form {
+  background-color: none;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.header-form {
+  padding: 30px 40px;
+}
+
+.header-form h2 {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.form {
+  padding: 0 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control-mine {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control-mine label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.form-control-mine input,
+.form-control-mine textarea {
+  border: 2px solid #3e445b;
+  border-radius: 5px;
+  outline: 0;
+
+  display: block;
+
+  font-size: 14px;
+
+  width: 100%;
+  padding: 15px;
+}
+
+.form-control-mine textarea {
+  height: 100px;
+}
+
+.form-control-mine.success input,
+.form-control-mine.success textarea {
+  border: 3px solid #4eca64;
+}
+
+.form-control-mine.error input,
+.form-control-mine.error textarea {
+  border: 3px solid #db5a5a;
+}
+
+.form-control-mine.error i.img-error {
+  visibility: visible;
+}
+
+.form-control-mine.success i.img-success {
+  visibility: visible;
+}
+
+.form-control-mine.error small {
+  color: #db5a5a;
+  visibility: visible;
+}
+
+.form-control-mine i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control-mine small {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: bold;
+}
+
+.form button {
+  background-color: #6c63ff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+
+  margin-top: 5px;
+
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #584ff5;
+  transition: 0.3s;
 }
