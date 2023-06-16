@@ -66,6 +66,7 @@ export const Formulario = () => {
         id="nome"
         name="nome"
         onChange={handleChange}
+        className="mb-5 h-[50px] md:w-[600px] rounded text-black px-2"
       />
 
       <label htmlFor="email">Email:</label>
@@ -74,6 +75,7 @@ export const Formulario = () => {
         id="email"
         name="email"
         onChange={handleChange}
+        className="mb-5 h-[50px] md:w-[600px] rounded text-black px-2"
       />
 
       <label htmlFor="telefone">Telefone:</label>
@@ -82,6 +84,7 @@ export const Formulario = () => {
         id="telefone"
         name="telefone"
         onChange={handleChange}
+        className="mb-5 h-[50px] md:w-[600px] rounded text-black px-2"
       />
 
       <label htmlFor="mensagem">Mensagem:</label>
@@ -90,6 +93,7 @@ export const Formulario = () => {
         type="text"
         name="mensagem"
         onChange={handleChange}
+        className="mb-5 h-[50px] md:w-[600px] rounded text-black px-2"
       />
 
       <label htmlFor="proposta">Proposta:</label>
@@ -104,10 +108,10 @@ export const Formulario = () => {
       <Button
         type="submit"
         variant="contained"
-        className="bg-[#ff0562] shadow-[0px_0px_20px_#e7004c]"
+        className="bg-[#e70000] shadow-[0px_0px_20px_#e7004c] mt-7"
         endIcon={<SendIcon />}
       >
-        Send
+        Enviar
       </Button>
     </form>
   );

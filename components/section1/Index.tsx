@@ -9,12 +9,12 @@ export default function Section1() {
                 <Image src={tessmann} alt='imagem tiago tessmann' className='w-full  md:max-w-lg'/>
                 <div className='w-full px-5 md:px-0 flex flex-col items-center md:w-[60%] max-w-[600px] md:justify-center'>
                     <div className='w-full flex flex-col'>
-                        <h1 className='text-[80px] md:text-[120px] font-bold text-white text-center md:text-start'>
-                            TITULO
+                        <h1 className='mb-5 text-[80px] md:text-[120px] leading-[100px] font-bold text-white text-center md:text-start'>
+                            Revenda Zoomies
                         </h1>
-                        <span className='w-full text-[20px] font-normal text-center  text-white border-[2px] rounded-xl'>sub-title</span>
+                        <span className='w-full text-[20px] font-normal text-center  text-white border-[2px] rounded-xl'>Seja um parceiro Zoomies!</span>
                     </div>
-                    <h2 className='mt-4 font-semibold text-white text-center md:text-start mb-10 md:text-[30px]'> descriçãoo para prender o leitor Lorem ipsum dolu veniam quibusdam deserunt placeat sun</h2>
+                    <h2 className='mt-4 font-semibold text-white text-center md:text-start mb-10 md:text-[30px]'>Obtenha um lucro bruto de até 70% revendendo produtos Zoomies!</h2>
                     <Botao>
                         Chamar no WhatsApp
                     </Botao>

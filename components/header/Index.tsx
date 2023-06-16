@@ -25,7 +25,7 @@ export default function Header() {
       }, [isSticky]);
 
     return(
-        <header  className="h-[60px] w-full fixed flex justify-center transition-all">
+        <header  className="h-[60px] w-full absolute top-0 z-50 flex justify-center transition-all">
             <h1 className="text-black ">Header</h1>
         </header>
     )
