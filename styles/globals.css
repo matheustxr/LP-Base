@@ -54,6 +54,14 @@ html{
   align-items: center !important;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  color:#e70000 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #e70000 !important;
+}
+
 /*FORM FORNECEDOR
 .container-form {
   background-color: none;

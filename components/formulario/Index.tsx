@@ -108,7 +108,7 @@ export const Formulario = () => {
       <Button
         type="submit"
         variant="contained"
-        className="bg-[#e70000] shadow-[0px_0px_20px_#e7004c] mt-7"
+        className="bg-[#e70000] hover:bg-[#f6a824] shadow-[0px_0px_20px_#e7004c] hover:shadow-[0px_0px_20px_#f6a824] transition-all duration-200 mt-7"
         endIcon={<SendIcon />}
       >
         Enviar

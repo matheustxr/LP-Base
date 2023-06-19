@@ -26,17 +26,17 @@ export default function Section2() {
             </div>
 
             <div className="mb-10 px-5 w-full md:w-[50%] flex flex-col items-center ">
-                <h2 className="text-5xl font-bold">Aprenda com quem sabe</h2>
+                <h2 className="text-5xl font-bold">Seja um recevendedor!!</h2>
                 <p className=" md:text-center mt-10 text-xl ">
-                    Aprenda a criar suas primeiras campanhas no google, a maior ferramenta de vendas da internet. Um curso do zero ao avançado para você começar a gerar vendas no google, mesmo que você nunca tenha criado nenhuma campanha.
+                Quer obter mais informações e entrar para o mundo Zoomies? Preencha o formulário abaixo e envie uma mensagem para nós!
                 </p>
             </div>
 
-            <div className="mb-20">
+            <div className="mb-20 px-5">
                 <Formulario />
             </div>
 
-            <div className="w-full px-7 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-2 lg:gap-5 mb-20">
+            <div className="w-full px-7 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-2 lg:gap-5 mb-20 ">
 
                 <div className="flex flex-col gap-2 lg:gap-3">
                     <Acordion 
