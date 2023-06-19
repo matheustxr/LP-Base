@@ -10,6 +10,7 @@
 
 html{
   background-color: #04083a;
+  scroll-behavior: smooth;
 }
 
 .headerSticky{
@@ -46,6 +47,8 @@ html{
   }
 }
 
+
+/*SWIPER CONFIG*/
 .swiper-slide{
   width: 100%;
   height: 100%;
@@ -60,6 +63,10 @@ html{
 
 .swiper-pagination-bullet-active{
   background: #e70000 !important;
+}
+
+.hidding{
+  display: none;
 }
 
 /*FORM FORNECEDOR
